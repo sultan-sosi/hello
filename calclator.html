@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Calculator</h1>
+    <div class="card">
+        <form action=""name="form">
+            <div class="head">
+                <input type="text"name="display"> 
+            </div>
+         <div class="body">
+            <div class="line">
+                <input type="button"value="on"class="btn"style="background-color:red"onclick="calculte(this.value='on')">
+                <input type="button"value="off"class="btn"onclick="calculte(display.value='')">
+                <input type="button"value="m+"class="btn"onclick="calculte(this.value)">
+                <input type="button"value="m-"class="btn"onclick="calculte(this.value)">
+                <input type="button"value="/"class="ctn"onclick="calculte(this.value)">
+            </div>
+
+            
+            <div class="line">
+                <input type="button"value="()"class="btn"onclick="calculte(this.value)">
+                <input type="button"value="7"class="btn"onclick="calculte(this.value)">
+                <input type="button"value="8"class="btn"onclick="calculte(this.value)">
+                <input type="button"value="9"class="btn"onclick="calculte(this.value)">
+                <input type="button"value="*"class="ctn"onclick="calculte(this.value)">
+            </div>
+            <div class="line">
+                <input type="button"value="^"class="btn"onclick="calculte(this.value)">
+                <input type="button"value="4"class="btn"onclick="calculte(this.value)">
+                <input type="button"value="5"class="btn"onclick="calculte(this.value)">
+                <input type="button"value="6"class="btn"onclick="calculte(this.value)">
+                <input type="button"value="-"class="ctn"onclick="calculte(this.value)">
+            </div>
+            <div class="line">
+                <input type="button"value="%"class="btn"onclick="calculte(this.value)">
+                <input type="button"value="1"class="btn"onclick="calculte(this.value)">
+                <input type="button"value="2"class="btn"onclick="calculte(this.value)">
+                <input type="button"value="3"class="btn"onclick="calculte(this.value)">
+                <input type="button"value="+"class="ctn"onclick="calculte(this.value)">
+            </div>
+            <div class="line">
+                <input type="button"value="0"class="btn"onclick="calculte(this.value)">
+                <input type="button"value="00"class="btn"onclick="calculte(this.value)">
+                <input type="button"value="."class="btn"onclick="calculte(this.value)">
+                <input type="button"value="="class="btn"onclick="display.value=eval(display.value)">
+                <input type="button"value="c"class="ctn"onclick="calculte(display.value='')">
+            </div>
+         </div>
+        </form>
+    </div>
+
+    <script>
+        function calculte(x){
+           form.display.value=form.display.value + x
+        }
+    </script>
+</body>
+</html>
